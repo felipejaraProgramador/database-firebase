@@ -1,0 +1,55 @@
+.principal{
+    border: 2px solid red;
+
+    display: flex;
+    justify-content: space-between;
+
+    .formProfile{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border: 2px solid blue;
+
+        .input-form{
+            margin: 10px;
+            padding: 10px 5px;
+        }
+
+        .btn-primary{
+            margin: 5px 10px;
+            padding: 6px 3px;
+        }
+    }
+
+    .list{
+        border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+
+        .profile-view{
+            display: flex;
+
+            .data{
+                display: block;
+                // flex-direction: column;
+                border: 2px solid pink;
+                width: 300px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .btn-delete{
+                margin: auto auto;
+                width: 100px;
+                height: 30px;
+                border: 2px solid red;
+                border-radius: 5px;
+                background-color: white;
+                color: red;
+                font-weight: bold;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,24 @@
+<div class="principal">
+    <form class="formProfile" [formGroup]="formProfile">
+        <h2>Ingreso de Perfiles</h2>
+
+        <input formControlName="name" type="text" class="input-form" placeholder="Ingrese Nombre">
+        <input formControlName="lastname" type="text" class="input-form" placeholder="Ingrese Apellido">
+
+        <button class="btn-primary" (click)="onSubmit()" >Ingresar</button>
+    </form>
+
+    <div class="list">
+
+        <h2>Listado de Perfiles</h2>
+
+        <div class="profile-view" *ngFor="let profile of profiles">
+            <div class="data">
+                <h3>{{profile.name}}</h3>
+                <h5>{{profile.lastname}}</h5>
+            </div>
+
+            <button class="btn-delete" (click)="onDelete(profile.id)">Borrar</button>
+        </div>
+    </div>
+</div>
